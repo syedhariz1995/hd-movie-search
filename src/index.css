@@ -394,6 +394,15 @@ MOVIE DETAILS
 .left__column--details{
   width: 100%;
   max-width: 750px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left__column--details h3{
+  margin-top: 12px;
+  margin-bottom: 14px;
+  font-size: 28px;
 }
 
 .right__column--details{
@@ -418,10 +427,30 @@ MOVIE DETAILS
 .poster__details{
   /* width: 100%;
   height: 100%; */
+  width: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+}
+
+.quality__buttons{
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quality{
+  width: 100%;
+  margin: 0 4px 0 4px;
+  border-radius: 10px;
+  cursor: not-allowed; 
+  background-color: #000;
+  color: gold;
+  padding: 10px;
+  font-size: 20px;
 }
 
 .title__details{
@@ -469,7 +498,7 @@ SKELETON
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: 750px;
+  height: 650px;
   width: 450px;
   background-color: lightgray;
 }
@@ -519,6 +548,20 @@ SKELETON
   height: 20px;
   background-color: lightgray;
   margin-bottom: 30px;
+}
+
+.watch__now--skeleton{
+  width: 200px;
+  height: 35px;
+  background-color: lightgray;
+  margin-top: 30px;
+}
+
+.quality-skeleton{
+  margin: 24px 4px 10px 4px;
+  width: 100px;
+  height: 33px;
+  background-color: lightgray;
 }
 
 
@@ -633,6 +676,15 @@ RESPONSIVENESS
     text-align: center;
   }
 
+  .quality__buttons{
+    margin-bottom: 30px;
+  }
+
+  .quality{
+    font-size: 18px;
+    padding: 6px;
+  }
+
   .movie__title--skeleton{
     width: 100%;
     max-width: 280px;
@@ -651,7 +703,15 @@ RESPONSIVENESS
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    margin-right: 58px;
+    margin-left: 20px;
   }
+
+  .rating{
+    margin: 0 40px;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -698,6 +758,25 @@ RESPONSIVENESS
     color: white;
     font-weight: 700;
   }
+
+  .details__column{
+   width: 100%;
+  }
+
+  .rating__details{
+    width: 100%;
+    margin: 0;
+    margin-right: 12px;
+  }
+
+  .rating__details, .rating{
+    font-size: 15px;
+  }
+
+  .rating{
+    margin: 0 12px;
+  }
+  
 
   .row h3{
     font-size: 20px;

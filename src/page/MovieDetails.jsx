@@ -31,6 +31,13 @@ const MovieDetails = () => {
       (<div className="movie__details--container">
         <div className="left__column--details">
           <div className="poster__details--skeleton" alt="" />
+          <div className="watch__now--skeleton"></div>
+            <div className="quality__buttons">
+              <div className="quality-skeleton"></div>
+              <div className="quality-skeleton"></div>
+              <div className="quality-skeleton"></div>
+              <div className="quality-skeleton"></div>
+            </div>
         </div>
 
         <div className="right__column--details">
@@ -71,6 +78,13 @@ const MovieDetails = () => {
         <div className="movie__details--container">
           <div className="left__column--details">
             <img className="poster__details" src={movie.Poster} alt="" />
+              <h3>Watch now : </h3>
+            <div className="quality__buttons">
+              <button className="quality">720p</button>
+              <button className="quality">1080p</button>
+              <button className="quality">1440p</button>
+              <button className="quality">2160p</button>
+            </div>
           </div>
 
           <div className="right__column--details">

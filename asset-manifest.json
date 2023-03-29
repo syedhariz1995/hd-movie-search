@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/hd-movie-search/static/css/main.6c3d0ad5.css",
-    "main.js": "/hd-movie-search/static/js/main.7ad4d439.js",
+    "main.css": "/hd-movie-search/static/css/main.421e6e68.css",
+    "main.js": "/hd-movie-search/static/js/main.7a93d05a.js",
     "static/js/787.9c52055a.chunk.js": "/hd-movie-search/static/js/787.9c52055a.chunk.js",
     "static/media/movie_logo.png": "/hd-movie-search/static/media/movie_logo.a13b773479588182713b.png",
     "static/media/undraw_home_cinema_l7yl.svg": "/hd-movie-search/static/media/undraw_home_cinema_l7yl.c4833f2d07b0a9bf6ef6f6be9f144289.svg",
     "static/media/undraw_searching_re_3ra9.svg": "/hd-movie-search/static/media/undraw_searching_re_3ra9.4f370357be480c378aa0174a84b18e3d.svg",
     "index.html": "/hd-movie-search/index.html",
-    "main.6c3d0ad5.css.map": "/hd-movie-search/static/css/main.6c3d0ad5.css.map",
-    "main.7ad4d439.js.map": "/hd-movie-search/static/js/main.7ad4d439.js.map",
+    "main.421e6e68.css.map": "/hd-movie-search/static/css/main.421e6e68.css.map",
+    "main.7a93d05a.js.map": "/hd-movie-search/static/js/main.7a93d05a.js.map",
     "787.9c52055a.chunk.js.map": "/hd-movie-search/static/js/787.9c52055a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c3d0ad5.css",
-    "static/js/main.7ad4d439.js"
+    "static/css/main.421e6e68.css",
+    "static/js/main.7a93d05a.js"
   ]
 }

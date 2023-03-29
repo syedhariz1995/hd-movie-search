@@ -12,7 +12,7 @@ function App() {
   },[])
 
   return (
-    <Router>
+    <Router basename="/hd-movie-search">
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />}></Route>

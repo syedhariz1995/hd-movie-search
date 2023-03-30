@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Nav from "../component/Nav";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const MovieDetails = () => {
   const [movie, setMovie] = useState(null);

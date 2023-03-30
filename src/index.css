@@ -8,7 +8,8 @@
 }
 
 body{
-  background-color: rgb(196, 217, 255);
+  background: rgb(0,61,112);
+  background: linear-gradient(90deg, rgba(0,61,112,1) 0%, rgba(2,12,28,1) 100%);
 }
 
 li{
@@ -18,7 +19,7 @@ li{
 a{
   text-decoration: none;
   cursor: pointer;
-  color: #000;
+  color: #fff;
 }
 
 .container{
@@ -65,7 +66,7 @@ nav{
 }
 
 .logo__img{
-  width: 120px;
+  width: 210px;
 }
 
 .nav__links{
@@ -76,10 +77,13 @@ nav{
 
 .nav__link{
   margin-right: 30px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
-  color: #242424;
+  color: transparent;
   position: relative;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: gold;
+  letter-spacing: 1px;
 }
 
 .link__hover--effect {
@@ -92,8 +96,8 @@ nav{
   bottom: -2px;
   left: 0;
   width: 100%;
-  height: 3px;
-  background-color: #000;
+  height: 2px;
+  background-color: gold;
   transform: scaleX(0);
   transition: transform 0.2s ease-in-out;
 }
@@ -103,7 +107,7 @@ nav{
 }
 
 .contact__link{
-  background-color: #6c9ffe;
+  background-color: #2598a0;
   padding: 8px 20px;
   border-radius: 50px;
   color: white;
@@ -111,7 +115,7 @@ nav{
 }
 
 .contact__link:hover{
-  background-color: #4787ff;
+  background-color: #307e95;
 }
 
 
@@ -133,18 +137,27 @@ header{
 }
 
 .hd-color{
-  color: gold;
-  background-color: #242424;
-  padding: 8px 20px;
+  color: transparent;
+  -webkit-text-stroke-width: 1.6px;
+  -webkit-text-stroke-color: gold;
   border-radius: 4px;
 }
 
 .row h1{
   animation: fade-up 0.5s ease;
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-stroke-color: #00e7f8;
+  color: transparent;
+  font-size: 52px;
 }
 
 .row h2{
+  letter-spacing: 1px;
   animation: fade-up 0.5s ease;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #00e8f9;
+  font-size: 32px;
+  color: transparent;
 }
 
 .main__sub--title{
@@ -153,6 +166,10 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #00eeff;
+  letter-spacing: 1.5px;
+  font-size: 28px;
   animation: fade-up 0.5s ease;
 }
 
@@ -200,7 +217,7 @@ figure{
 }
 
 .header__img--searching {
-  width: 60%;
+  width: 55%;
   opacity: 1;
   transition: transform 600ms ease-in-out, opacity 0.5s ease-in-out;
   transform: scale(0.8);
@@ -223,7 +240,8 @@ SEARCH
 */
 
 .search__container{
-  background: #fff;
+  background: transparent;
+  border: 1px #00e7f8 solid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,6 +251,10 @@ SEARCH
   margin: 40px auto 40px auto;
   max-width: 800px;
   animation: fade-up 0.5s ease;
+}
+
+input, select, textarea{
+  color: #00e7f8;
 }
 
 .search{
@@ -246,6 +268,16 @@ SEARCH
   display: flex;
   align-items: center;
   justify-content: center;
+  background: transparent;
+}
+
+.search::placeholder{
+  color: #00e7f8;
+  font-weight: 100;
+}
+
+.search::selection{
+  color: #00e7f8;
 }
 
 
@@ -257,6 +289,7 @@ SEARCH
   transition: 90ms all ease-in-out;
   cursor: pointer;
   padding: 12px 0;
+  color: #00e7f8;
 }
 
 .search__button i{
@@ -278,10 +311,10 @@ SEARCH
 }
 
 select{
-  background-color: #fff;
   border-radius: 4px;
-  border: 1px solid #dcdfe6;
-  color: #606266;
+  border: 1px solid #00e7f8;
+  color: #00e7f8;
+  background-color: transparent;
   height: 40px;
   line-height: 40px;
   padding: 0 16px;
@@ -290,8 +323,15 @@ select{
   font-size: 16px;
 }
 
+option{
+  background-color: #000000;
+}
+
 .search__results h3{
+  color: transparent;
   font-size: 32px;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #00eeff;
 }
 
 .loading {
@@ -358,6 +398,11 @@ MOVIES
   text-decoration: none;
 }
 
+.movie__title h3,
+.movie__year p{
+  color: gold;
+}
+
 
 .movie__year{
   font-size: 20px;
@@ -370,6 +415,7 @@ MOVIES
 .movie:hover .movie__img {
   transform: scale(1.03);
 }
+
 
 .no__movies{
   font-size: 20px;
@@ -421,6 +467,17 @@ MOVIE DETAILS
 .details__column{
   display: flex;
   flex-direction: column;
+}
+
+.left__column--details h3{
+  color: gold;
+}
+
+
+.details__column h3,
+.details__column h4,
+.title__details{
+  color: #00e7f8;
 }
 
 
@@ -587,10 +644,10 @@ RESPONSIVENESS
   }
 
   .logo__img{
-    width: 110px;
+    width: 200px;
   }
 
-  header h1{
+  .row h1{
     font-size: 40px;
     text-align: center;
   }
@@ -715,12 +772,9 @@ RESPONSIVENESS
 }
 
 @media (max-width: 480px) {
-  .nav__home{
-    display: none;
-  }
 
   .logo__img{
-    width: 100px;
+    width: 150px;
   }
 
   .header{
@@ -732,20 +786,17 @@ RESPONSIVENESS
   .header__img{
     width: 90%;
   }
-
+  
   .header__img--searching{
     width: 90%;
   }
-
-  header h1{
-    font-size: 24px;
+  
+  .row h1{
+    font-size: 40px;
   }
 
-  .main__sub--title{
+  .row h3{
     font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .explore__anchor{
@@ -778,9 +829,6 @@ RESPONSIVENESS
   }
   
 
-  .row h3{
-    font-size: 20px;
-  }
 
   .search{
     height: 50px;
@@ -789,11 +837,16 @@ RESPONSIVENESS
   .movies{
     display: flex;
     flex-direction: column;
+    margin: 20px auto 0 auto;
   }
 
   .movie{
     width: 100%;
     max-height: 100%;
+  }
+
+  .movie__title{
+    width: 100%;
   }
 
   .movie__info{

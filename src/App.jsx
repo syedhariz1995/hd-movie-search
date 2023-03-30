@@ -8,7 +8,7 @@ import React, { useEffect } from "react";
 function App() {
 
   useEffect(() => {
-    document.title = "HD MOVIE"
+    document.title = "HD MOVIES"
   },[])
 
   return (
